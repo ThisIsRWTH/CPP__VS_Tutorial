@@ -6,8 +6,10 @@ char tolittle(char key);
 
 int main()
 {
+	char res;
+	res = tolittle('f');
 
-	cout << tolittle('f');
+	cout << res;
 	_getch();
 	return 0;
 }
