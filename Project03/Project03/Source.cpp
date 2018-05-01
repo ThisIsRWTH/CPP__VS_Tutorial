@@ -27,10 +27,7 @@ int main()
 
 	arr_ptr = arr + 3;
 
-
-
-
-
+	int* aptr02; // int* a == int *a;
 
 
 	_getch();
