@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\workspaceall\nikacppworkspace\exercise1.6.1.6\exercise1.6.1.6\source.cpp(16): error C2086: 'char iName1': redefinition
+  c:\workspaceall\nikacppworkspace\exercise1.6.1.6\exercise1.6.1.6\source.cpp(9): note: see declaration of 'iName1'
