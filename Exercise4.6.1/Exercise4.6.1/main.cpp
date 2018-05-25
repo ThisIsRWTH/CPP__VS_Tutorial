@@ -40,7 +40,7 @@ int main()
 	//double rad = 0, grd = 0, sightlength = 0;
 	//while (!Vector::isOrthogonal(sight, earth))
 	//{
-	//	earth->rotateOnZAxis(0.0000001); //Die iteration um diesen kleinen Winkel ist nötig, da die Orthogonalität nicht präzise genug erreicht wird.
+	//	earth->rotateOnZAxis(rad); //Die iteration um diesen kleinen Winkel ist nötig, da die Orthogonalität nicht präzise genug erreicht wird.
 	//	rad += 0.0000001;
 	//	sight = earth->substract(person);
 	//	sightlength = sight->getLength();
@@ -48,12 +48,12 @@ int main()
 	//grd = rad * 180 / PI;
 	//std::cout << "Winkel: " << grd << "[grd] Sichtweite: " << sightlength << "km" << std::endl;
 
-	Vector v1 = Vector(1,0,0);
-	Vector v2 = Vector(0, -1, 0);
-	cout << v1.angleBetweenVector(&v2);
+	vector v1 = vector(1,0,0);
+	vector v2 = vector(0, -1, 0);
+	cout << v1.anglebetweenvector(&v2);
 	float f = 0.123456789;
 
-	cout << "\nSet Precision: ";
+	cout << "\nset precision: ";
 	cout << fixed << setprecision(6) << f;
 	_getch();
 	return 0;
