@@ -110,15 +110,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\dl37\Vorlagen\Vorlagen\Versuch05\List.cpp" />
-    <ClCompile Include="..\..\..\..\dl37\Vorlagen\Vorlagen\Versuch05\ListElem.cpp" />
-    <ClCompile Include="..\..\..\..\dl37\Vorlagen\Vorlagen\Versuch05\main.cpp" />
-    <ClCompile Include="..\..\..\..\dl37\Vorlagen\Vorlagen\Versuch05\Student.cpp" />
+    <ClCompile Include="List.cpp" />
+    <ClCompile Include="ListElem.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Student.cpp" />
+    <ClCompile Include="UnderstandingAlias.cpp" />
+    <ClCompile Include="UnderstandingPointer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\dl37\Vorlagen\Vorlagen\Versuch05\List.h" />
-    <ClInclude Include="..\..\..\..\dl37\Vorlagen\Vorlagen\Versuch05\ListElem.h" />
-    <ClInclude Include="..\..\..\..\dl37\Vorlagen\Vorlagen\Versuch05\Student.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="ListElem.h" />
+    <ClInclude Include="Student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

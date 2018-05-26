@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\workspaceall\nikacppworkspace\exercise3.2v2\exercise3.2v2\main.cpp(245): warning C4060: switch statement contains no 'case' or 'default' labels
+  Exercise3.2V2.vcxproj -> C:\workspaceAll\NikaCPPWorkSpace\Exercise3.2V2\Debug\Exercise3.2V2.exe
+  Exercise3.2V2.vcxproj -> C:\workspaceAll\NikaCPPWorkSpace\Exercise3.2V2\Debug\Exercise3.2V2.pdb (Partial PDB)
