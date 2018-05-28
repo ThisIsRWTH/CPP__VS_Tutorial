@@ -48,9 +48,26 @@ int main()
 	//grd = rad * 180 / PI;
 	//std::cout << "Winkel: " << grd << "[grd] Sichtweite: " << sightlength << "km" << std::endl;
 
-	vector v1 = vector(1,0,0);
-	vector v2 = vector(0, -1, 0);
-	cout << v1.anglebetweenvector(&v2);
+	Vector* v1 = new Vector(0,0,1);
+	Vector* v2 = new Vector(0, -1, 0);
+	cout <<"Angle between vectors: "<< v1->angleBetweenVector(v2);
+
+	Vector* result = v1->substract(v2);
+	cout << "This is the subtract of two vectors: ";
+	result->print();
+
+	double result2 = v1->scalarProduct(v2);
+	cout << "\nThis is the scalar product of two vectors: " << result2;
+
+	cout << "\nThis is the length of v1: " << v1->getLength();
+
+	cout << "\nThis is the v1 after rotation on z axis: ";
+	//The input is radian!
+	v1->rotateOnZAxis(1);
+	v1->print();
+
+
+
 	float f = 0.123456789;
 
 	cout << "\nset precision: ";

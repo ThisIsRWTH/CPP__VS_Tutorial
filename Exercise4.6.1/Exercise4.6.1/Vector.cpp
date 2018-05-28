@@ -48,9 +48,9 @@ Vector* Vector::substract(Vector* v)
 	double nY = y - v->getY();
 	double nZ = z - v->getZ();
 
-	Vector result = Vector(nX, nY, nZ);
+	Vector *result = new Vector(nX, nY, nZ);
 
-	return &result;
+	return result;
 
 
 	//return new Vector(x - v->getX(), y - v->getY(), z - v->getZ());
@@ -71,6 +71,8 @@ double Vector::angleBetweenVector(Vector* inputVector)
 
 	double result = acos(product / (lengthA*lengthB));
 
+	//result is rad (by default)
+	//result is producted to 63.662 in order to generate Grad
 	return result * 63.662;
 
 }
