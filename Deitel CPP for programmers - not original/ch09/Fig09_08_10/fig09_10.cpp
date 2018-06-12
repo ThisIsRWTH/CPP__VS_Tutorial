@@ -9,10 +9,23 @@ using std::endl;
 int main()
 {
    Time t1; // all arguments defaulted
+
+
+
+   Time t1v2(0,0,0); // ME: hich farghi ba khate bala nemikone!
+
+
+
    Time t2( 2 ); // hour specified; minute and second defaulted
    Time t3( 21, 34 ); // hour and minute specified; second defaulted 
    Time t4( 12, 25, 42 ); // hour, minute and second specified
    Time t5( 27, 74, 99 ); // all bad values specified
+
+   
+   //Error:
+   //Time t6(10, ,02); // ME: nemishe yeki az vasat ra meghdar dehi nakonim va entezar dashte bashim meghdare default begire!
+
+
 
    cout << "Constructed with:\n\nt1: all arguments defaulted\n  ";
    t1.printUniversal(); // 00:00:00

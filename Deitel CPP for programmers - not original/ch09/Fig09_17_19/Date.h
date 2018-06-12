@@ -11,6 +11,9 @@ class Date
 {
 public:
    Date( int = 1, int = 1, int = 2000 ); // default constructor
+
+   void yearPlusPlus();
+
    void print();
 private:
    int month;

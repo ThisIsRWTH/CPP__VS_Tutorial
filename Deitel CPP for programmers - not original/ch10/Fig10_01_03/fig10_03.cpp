@@ -10,14 +10,32 @@ int main()
                           // OBJECT      MEMBER FUNCTION
    wakeUp.setHour( 18 );  // non-const   non-const
    
-   noon.setHour( 12 );    // const       non-const
+   //noon.setHour( 12 );    // const       non-const
    
    wakeUp.getHour();      // non-const   const
    
    noon.getMinute();      // const       const
    noon.printUniversal(); // const       const
    
-   noon.printStandard();  // const       non-const
+   //noon.printStandard();  // const       non-const
+
+
+
+
+
+
+   const Time* midnight = new Time(24, 0, 0);
+   //midnight->setMinute(1);
+   midnight->printUniversal();
+   //midnight->printStandard();
+
+   Time * const sleepTime = new Time(21, 0, 0);
+   sleepTime->printStandard();
+   sleepTime->printUniversal();
+
+
+
+
    return 0;
 } // end main
 

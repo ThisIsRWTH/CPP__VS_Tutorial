@@ -29,6 +29,13 @@ int main()
    Count counter; // create counter object 
    Count *counterPtr = &counter; // create pointer to counter
    Count &counterRef = counter; // create reference to counter
+   
+   Count *counterPtr2 = &counterRef; // ME: farghi ba line 30 nemikone!
+
+   cout << "Before Doing Anything: ";
+   counter.print(); // ME: meghdare tasadofi tooye x gharar dare!
+
+
 
    cout << "Set x to 1 and print using the object's name: ";
    counter.setX( 1 ); // set data member x to 1
@@ -41,6 +48,15 @@ int main()
    cout << "Set x to 3 and print using a pointer to an object: ";
    counterPtr->setX( 3 ); // set data member x to 3
    counterPtr->print(); // call member function print
+
+
+
+   (*counterPtr).print(); // ME: in khat ba khate 50 yeksane!
+
+   counterPtr2->print(); // ME: natije in khat ba khate 50 yeksane!
+
+
+
    return 0;  
 } // end main
 

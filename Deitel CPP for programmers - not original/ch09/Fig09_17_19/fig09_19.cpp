@@ -17,10 +17,24 @@ int main()
    cout << "\ndate2 = ";
    date2.print();
 
+
+
    date2 = date1; // default memberwise assignment
+				  // ME: intori NIST ke 1 object dar hafeze dashte bashim va har 2 behesh erja konan.
+				  // ME: intorie ke 2 ta object darim ke meghdare day o month o year'eshoon tak tak copy shode az rooye ham.
+
+
+
 
    cout << "\n\nAfter default memberwise assignment, date2 = ";
    date2.print();
+
+   cout << "\n\nAfter calling yearPlusPlus, date2 = ";
+   date2.yearPlusPlus();
+   date2.print();
+   cout << "\nHowever, date1 = ";
+   date1.print();
+
    cout << endl;
    return 0;
 } // end main

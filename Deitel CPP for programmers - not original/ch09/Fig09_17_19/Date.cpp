@@ -35,3 +35,9 @@ void Date::print()
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  **************************************************************************/
+
+
+void Date::yearPlusPlus()
+{
+	year++;
+}
